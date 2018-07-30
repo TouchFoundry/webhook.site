@@ -64,6 +64,7 @@ class RequestController extends Controller
             $token->default_content,
             $httpRequest->statusCode ?? $token->default_status,
             [
+                'a-lovely-test' => 'test',
                 'Content-Type' => $token->default_content_type,
                 'X-Request-Id' => $request->uuid,
                 'X-Token-Id' => $token->uuid,
